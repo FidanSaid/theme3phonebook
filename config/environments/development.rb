@@ -27,7 +27,7 @@ config.assets.quiet = true
 config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
 
-   config.action_mailer.default_url_options = { host:'http://localhost:3000' }
+config.action_mailer.default_url_options = { host:'https://theme3-ror-app.herokuapp.com'}
 
   config.action_mailer.delivery_method = :smtp
       config.action_mailer.smtp_settings = {
@@ -37,6 +37,6 @@ config.file_watcher = ActiveSupport::EventedFileUpdateChecker
       :password             =>  "321test987654321",
       :authentication       =>  'plain',
       :enable_starttls_auto => true }
-  
+
 
 end
