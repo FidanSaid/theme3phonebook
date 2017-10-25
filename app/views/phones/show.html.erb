@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @phone.name %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @phone.number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @phone.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @phone.address %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @phone.note %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@phone.image.profile_size.url) %>
+
+</p>
+
+<%= link_to 'Edit', edit_phone_path(@phone) %>
+<%= link_to 'Back', phones_path %>
